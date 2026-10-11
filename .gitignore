@@ -1,0 +1,33 @@
+# Virtual environment
+venv/
+.cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Build / install artifacts
+build/
+*.egg-info/
+dist/
+
+# Runtime data
+downloads/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+
+# Pip install artifact
+*.egg-info/
+venv/ok

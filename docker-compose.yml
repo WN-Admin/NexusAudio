@@ -1,0 +1,13 @@
+services:
+  nexusaudio:
+    build: .
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ./downloads:/app/downloads
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+      - QT_QPA_PLATFORM=xcb
+      - XDG_RUNTIME_DIR=/tmp/runtime-nexus
+    network_mode: host
+    stdin_open: true
+    tty: true
